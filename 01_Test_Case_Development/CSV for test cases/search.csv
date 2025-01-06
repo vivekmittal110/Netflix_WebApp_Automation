@@ -1,0 +1,41 @@
+﻿Test Scenario TID,Test Scenario,Test Case Id,Test data,Test Case Title,Pre Condition,Steps to Execute,Expected Result,Actual Result,Status
+TID005,Search,TCS001,Valid movie name ('Inception'),Verify search for a valid movie,User is logged into the account,"1. Enter 'Inception' in the search bar.
+2. Press 'Enter.'",'Inception' appears in the search results with its details.,,
+TID005,Search,TCS002,Valid series name ('Stranger Things'),Verify search for a valid series,User is logged into the account,"1. Enter 'Stranger Things' in the search bar.
+2. Press 'Enter.'",'Stranger Things' appears in the search results with its details.,,
+TID005,Search,TCS003,Valid genre ('Comedy'),Verify search for a valid genre,User is logged into the account,"1. Enter 'Comedy' in the search bar.
+2. Press 'Enter.'",Movies and series under 'Comedy' appear in the search results.,,
+TID005,Search,TCS004,Partial movie name ('Inc'),Verify search with a partial movie name,User is logged into the account,"1. Enter 'Inc' in the search bar.
+2. Press 'Enter.'","Results related to 'Inc' (e.g., 'Inception') are displayed.",,
+TID005,Search,TCS005,Multiple keywords ('Comedy Romance'),Verify search with multiple genres,User is logged into the account,"1. Enter 'Comedy Romance' in the search bar.
+2. Press 'Enter.'",Movies and series matching 'Comedy Romance' appear in the results.,,
+TID005,Search,TCS006,Non-alphanumeric character ('#'),Verify search with special characters,User is logged into the account,"1. Enter '#' in the search bar.
+2. Press 'Enter.'",An appropriate message ('No results found') is displayed.,,
+TID005,Search,TCS007,Mixed-case input ('iNcePtiOn'),Verify case-insensitive search,User is logged into the account,"1. Enter 'iNcePtiOn' in the search bar.
+2. Press 'Enter.'",Results for 'Inception' are displayed.,,
+TID005,Search,TCS008,Valid keyword in another language ('Película'),Verify multilingual search functionality,User is logged into the account,"1. Enter 'Película' in the search bar.
+2. Press 'Enter.'",Results related to the keyword in the specified language are displayed.,,
+TID005,Search,TCS009,Movie name with trailing spaces ('Inception '),Verify search with trailing spaces,User is logged into the account,"1. Enter 'Inception ' (with space at the end) in the search bar.
+2. Press 'Enter.'","Results for 'Inception' are displayed, ignoring the trailing spaces.",,
+TID005,Search,TCS010,Valid movie/series with numbers ('Stranger Things 2'),Verify search for titles with numbers,User is logged into the account,"1. Enter 'Stranger Things 2' in the search bar.
+2. Press 'Enter.'",Results for 'Stranger Things 2' are displayed.,,
+TID006,Search,TCS011,Invalid term ('xyz123'),Verify no results for an invalid search term,User is logged into the account,"1. Enter 'xyz123' in the search bar.
+2. Press 'Enter.'",'No results found' message is displayed.,,
+TID006,Search,TCS012,Empty input,Verify search with an empty input,User is logged into the account,"1. Leave the search bar empty.
+2. Press 'Enter.'",'Please enter a search term' message is displayed.,,
+TID006,Search,TCS013,Spaces only ('   '),Verify search with only spaces,User is logged into the account,"1. Enter only spaces in the search bar.
+2. Press 'Enter.'",'Please enter a valid search term' message is displayed.,,
+TID006,Search,TCS014,Long invalid string,Verify search with an excessively long invalid term,User is logged into the account,"1. Enter a very long invalid term (e.g., 500+ characters).
+2. Press 'Enter.'",'No results found' message is displayed.,,
+TID006,Search,TCS015,SQL injection term ('1=1; DROP TABLE'),Verify handling of potential SQL injection,User is logged into the account,"1. Enter '1=1; DROP TABLE' in the search bar.
+2. Press 'Enter.'","Input is sanitized, and 'No results found' message is displayed.",,
+TID006,Search,TCS016,Script input ('<script>alert('XSS')</script>'),Verify handling of script injections,User is logged into the account,"1. Enter '<script>alert('XSS')</script>' in the search bar.
+2. Press 'Enter.'","Input is sanitized, and 'No results found' message is displayed.",,
+TID006,Search,TCS017,Numeric input ('12345'),Verify search with numeric-only input,User is logged into the account,"1. Enter '12345' in the search bar.
+2. Press 'Enter.'",'No results found' message is displayed.,,
+TID006,Search,TCS018,Random symbols ('@$%&*!'),Verify search with random symbols,User is logged into the account,"1. Enter '@$%&*!' in the search bar.
+2. Press 'Enter.'",'No results found' message is displayed.,,
+TID006,Search,TCS019,Keyword with typos ('Inceptin'),Verify results for near-matching keywords,User is logged into the account,"1. Enter 'Inceptin' (typo) in the search bar.
+2. Press 'Enter.'",System suggests or displays results for 'Inception.',,
+TID006,Search,TCS020,Unicode characters ('こんにちは'),Verify handling of Unicode characters,User is logged into the account,"1. Enter 'こんにちは' (Japanese text) in the search bar.
+2. Press 'Enter.'",'No results found' message is displayed or related results appear if supported.,,

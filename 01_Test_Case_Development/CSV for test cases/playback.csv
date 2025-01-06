@@ -1,0 +1,38 @@
+﻿Test Scenario TID,Test Scenario,Test Case Id,Test data,Test Case Title,Pre Condition,Steps to Execute,Expected Result,Actual Result,Status
+TID009,PlayBack Controls,TCPB001,"Netflix Login info, Video URL",Verify Play button on Netflix,User is logged into Netflix and a video is loaded,"1. Open Netflix.
+2. Select a video.
+3. Click Play.",The selected video starts playing on Netflix.,,
+TID009,PlayBack Controls,TCPB002,"Netflix Login info, Video URL",Verify Pause button on Netflix,User is logged into Netflix and a video is playing,"1. Start video playback on Netflix.
+2. Click Pause.",The video pauses immediately on Netflix.,,
+TID009,PlayBack Controls,TCPB003,"Netflix Login info, Video URL",Verify Forward control on Netflix,User is logged into Netflix and a video is playing,"1. Start video playback on Netflix.
+2. Use Forward control to skip ahead.",The video skips forward by the specified duration on Netflix.,,
+TID009,PlayBack Controls,TCPB004,"Netflix Login info, Video URL",Verify Rewind control on Netflix,User is logged into Netflix and a video is playing,"1. Start video playback on Netflix.
+2. Use Rewind control to go back.",The video skips backward by the specified duration on Netflix.,,
+TID009,PlayBack Controls,TCPB005,"Netflix Login info, Video URL",Verify Volume adjustment on Netflix,User is logged into Netflix and a video is playing,"1. Start video playback on Netflix.
+2. Adjust the volume slider to different levels.",The video volume changes accordingly on Netflix.,,
+TID009,PlayBack Controls,TCPB006,"Netflix Login info, Video URL",Verify Mute control on Netflix,User is logged into Netflix and a video is playing,"1. Start video playback on Netflix.
+2. Click Mute.",The video mutes and no sound is heard on Netflix.,,
+TID009,PlayBack Controls,TCPB007,"Netflix Login info, Video URL",Verify Unmute control on Netflix,User is logged into Netflix and a video is muted and playing,"1. Start video playback on Netflix.
+2. Click Unmute.",The video sound resumes at the last set volume on Netflix.,,
+TID009,PlayBack Controls,TCPB008,"Netflix Login info, Video URL",Verify seeking on Netflix,User is logged into Netflix and a video is loaded/playing,"1. Seek to a specific time using the timeline slider on Netflix.
+2. Verify play, pause, and volume control.",All playback controls function seamlessly during seek on Netflix.,,
+TID009,PlayBack Controls,TCPB009,"Netflix Login info, Video URL",Verify control responsiveness on Netflix,User is logged into Netflix and a video is loaded,"1. Test all controls (play, pause, forward, rewind, volume) on different devices (desktop, mobile) and browsers.",Playback controls are responsive across devices and browsers on Netflix.,,
+TID010,PlayBack Controls,TCPB010,"Netflix Login info, Video URL",Verify video start on Netflix,User is logged into Netflix and video URL is valid,"1. Open Netflix.
+2. Select a video.
+3. Observe the loading time and video start.",The video starts within an acceptable loading time (<3 seconds) on Netflix.,,
+TID010,PlayBack Controls,TCPB011,"Netflix Login info, Video URL",Verify playback on Chrome for Netflix,User is logged into Netflix and uses Chrome browser,"1. Open Netflix in Chrome.
+2. Select and play a video.",The video plays seamlessly on Netflix using Chrome.,,
+TID010,PlayBack Controls,TCPB012,"Netflix Login info, Video URL",Verify playback on Firefox for Netflix,User is logged into Netflix and uses Firefox browser,"1. Open Netflix in Firefox.
+2. Select and play a video.",The video plays seamlessly on Netflix using Firefox.,,
+TID010,PlayBack Controls,TCPB013,"Netflix Login info, Video URL",Verify playback on Safari for Netflix,User is logged into Netflix and uses Safari browser,"1. Open Netflix in Safari.
+2. Select and play a video.",The video plays seamlessly on Netflix using Safari.,,
+TID010,PlayBack Controls,TCPB014,"Netflix Login info, Video URL",Verify playback on mobile devices for Netflix,User is logged into Netflix on a mobile device,"1. Open Netflix on a mobile browser/app.
+2. Select and play a video.",The video plays seamlessly on Netflix on mobile devices.,,
+TID010,PlayBack Controls,TCPB015,"Netflix Login info, Video URL, Quality=HD",Verify HD quality on Netflix,User is logged into Netflix and video supports HD quality,"1. Select and play a video.
+2. Switch to HD quality.",The video streams in HD quality without lag on Netflix.,,
+TID010,PlayBack Controls,TCPB016,"Netflix Login info, Video URL, Network speed",Verify adaptive streaming on Netflix,User is logged into Netflix and network connection is variable,"1. Play video on Netflix using a slow network.
+2. Observe video quality auto-adjustment based on speed.",The video quality adapts seamlessly based on the network speed on Netflix.,,
+TID010,PlayBack Controls,TCPB017,"Netflix Login info, Video URL, Subtitle file",Verify subtitles on Netflix,User is logged into Netflix and subtitle file is available,"1. Select and play a video with subtitles enabled.
+2. Verify subtitle sync with the video.",Subtitles are synced with the video playback on Netflix.,,
+,,,,,,,,,
+,,,,,,,,,

@@ -1,0 +1,36 @@
+﻿Test Scenario TID,Test Scenario,Test Case Id,Test data,Test Case Title,Pre Condition,Steps to Execute,Expected Result,Actual Result,Status,
+TID007,General Navigation,TCGN001,Section: Home,Verify smooth navigation to Home,User is logged into the account,"1. Click on 'Home' in the main menu.
+2. Observe the loading time and transitions.","Home section loads without any lag, and the content is displayed seamlessly.",,,
+TID007,General Navigation,TCGN002,Section: Movies,Verify smooth navigation to Movies,User is logged into the account,"1. Click on 'Movies' in the main menu.
+2. Observe the loading time and transitions.","Movies section loads without any lag, and the content is displayed seamlessly.",,,
+TID007,General Navigation,TCGN003,Section: Series,Verify smooth navigation to Series,User is logged into the account,"1. Click on 'Series' in the main menu.
+2. Observe the loading time and transitions.","Series section loads without any lag, and the content is displayed seamlessly.",,,
+TID007,General Navigation,TCGN004,Section: My List,Verify smooth navigation to My List,User is logged into the account,"1. Click on 'My List' in the main menu.
+2. Observe the loading time and transitions.","My List section loads without any lag, and the saved content is displayed correctly.",,,
+TID007,General Navigation,TCGN005,Random Navigation,Verify smooth navigation across sections,User is logged into the account,"1. Navigate to each section (Home, Movies, Series, My List) randomly.
+2. Observe the loading time and transitions after each navigation.","All sections load without any lag, and the navigation is seamless.",,,
+TID007,General Navigation,TCGN006,Long Navigation Test,Verify smooth navigation for 10+ clicks,User is logged into the account,"1. Navigate across different sections repeatedly (e.g., 10 times).
+2. Observe app responsiveness after multiple navigations.",Smooth navigation is maintained without lag or app crashes.,,,
+TID007,General Navigation,TCGN007,Device: Mobile,Verify smooth navigation on mobile device,User is logged into the account,"1. Open the app on a mobile device.
+2. Navigate through Home, Movies, Series, and My List.",All sections load smoothly on mobile devices without performance issues.,,,
+TID007,General Navigation,TCGN008,Device: Tablet,Verify smooth navigation on tablet,User is logged into the account,"1. Open the app on a tablet device.
+2. Navigate through Home, Movies, Series, and My List.",All sections load smoothly on tablets without performance issues.,,,
+TID008,General Navigation,TCGN009,Movie: 'Inception',Verify adding a movie to My List,User is logged into the account,"1. Navigate to the Movies section.
+2. Select 'Inception.'
+3. Click 'Add to My List.'","'Inception' is added to My List, and the 'Added' confirmation is displayed.",,,
+TID008,General Navigation,TCGN010,Series: 'Stranger Things',Verify adding a series to My List,User is logged into the account,"1. Navigate to the Series section.
+2. Select 'Stranger Things.'
+3. Click 'Add to My List.'","'Stranger Things' is added to My List, and the 'Added' confirmation is displayed.",,,
+TID008,General Navigation,TCGN011,Movie/Series already added,Verify removing a movie/series from My List,User is logged into the account,"1. Navigate to My List.
+2. Locate the movie/series already added.
+3. Click 'Remove from My List.'","The selected movie/series is removed from My List, and the 'Removed' confirmation is displayed.",,,
+TID008,General Navigation,TCGN012,Empty My List,Verify display when My List is empty,User is logged into the account,"1. Remove all items from My List.
+2. Navigate to My List.","'Your list is empty' message is displayed, and the section is empty.",,,
+TID008,General Navigation,TCGN013,Large My List (>50 items),Verify handling of a large number of items,User is logged into the account,"1. Add 50+ movies/series to My List.
+2. Navigate to My List.
+3. Scroll through the list.","All items are displayed properly, and navigation remains smooth.",,,
+TID008,General Navigation,TCGN014,Search Result: My List,Verify adding content from search to My List,User is logged into the account,"1. Search for a movie or series.
+2. Add the item from the search results to My List.
+3. Check My List.",The selected content is successfully added to My List from the search results.,,,
+TID008,General Navigation,TCGN015,Repeated Add/Remove,Verify functionality under repeated actions,User is logged into the account,"1. Add and remove an item from My List repeatedly.
+2. Check if the list reflects the correct state each time.","Add and remove functionality works without errors, and the list reflects the correct state consistently.",,,

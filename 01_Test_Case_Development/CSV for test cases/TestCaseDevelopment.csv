@@ -1,0 +1,53 @@
+﻿Test Scenario TID,Test Scenario,Test Case Id,Test data,Test Case Title,Pre Condition,Steps to Execute,Expected Result,Actual Result,Status,
+TID003,Account Management,TCAM001,"Valid user data (Name, Email, Password)",Verify user profile creation,User is logged into Netflix account management page,"1. Navigate to the ""Profile Management"" section.
+2. Click on ""Create New Profile.""
+3. Enter valid user data and click ""Save"".",Profile is successfully created and visible in the list of profiles.,,,
+TID003,Account Management,TCAM002,"Invalid data (Empty fields, special chars)",Verify error handling for invalid data,User is logged into Netflix account management page,"1. Navigate to the ""Profile Management"" section.
+2. Click on ""Create New Profile.""
+3. Enter invalid data and click ""Save.""","Error messages displayed, no profile created.",,,
+TID003,Account Management,TCAM003,Updated valid user data,Verify user profile update functionality,At least one profile exists in the account,"1. Navigate to the existing profile.
+2. Click ""Edit Profile.""
+3. Update valid data and save.",Profile is updated with new information.,,,
+TID003,Account Management,TCAM004,Invalid update data,Verify error handling during profile updates,At least one profile exists in the account,"1. Navigate to the existing profile.
+2. Click ""Edit Profile.""
+3. Enter invalid data and save.","Error messages displayed, no changes saved.",,,
+TID003,Account Management,TCAM005,Existing profile,Verify user profile deletion functionality,At least one profile exists in the account,"1. Navigate to the existing profile.
+2. Click ""Delete Profile.""
+3. Confirm the delete action in the popup window.",Profile is deleted and removed from the list of profiles.,,,
+TID003,Account Management,TCAM006,"Empty fields (No name, No email, etc.)",Verify system rejects incomplete profile creation,User is logged into Netflix account management page,"1. Navigate to the ""Profile Management"" section.
+2. Click on ""Create New Profile.""
+3. Leave all fields empty and click ""Save.""",Error message for empty fields displayed.,,,
+TID003,Account Management,TCAM007,"Profile name with special characters (e.g., #, $, @)",Verify system handles special characters in profile names,User is logged into Netflix account management page,"1. Navigate to the ""Profile Management"" section.
+2. Enter special characters in the profile name field.
+3. Click ""Save.""",Profile created successfully or error message if special characters are invalid.,,,
+TID003,Account Management,TCAM008,Profile name exceeding character limit,Verify system limits profile name length,User is logged into Netflix account management page,"1. Navigate to the ""Profile Management"" section.
+2. Enter a profile name longer than allowed (e.g., 100+ characters).
+3. Click ""Save.""",Error message for exceeding character limit displayed.,,,
+TID003,Account Management,TCAM009,Confirm deletion dialog box,Verify user can confirm profile deletion,At least one profile exists in the account,"1. Navigate to the profile.
+2. Click ""Delete Profile.""
+3. Verify if a confirmation dialog box is displayed.
+4. Confirm deletion.",Profile is deleted successfully after confirmation.,,,
+TID003,Account Management,TCAM010,Profile ID of deleted profile,Verify profile no longer appears after deletion,At least one profile exists in the account,"1. Delete a profile.
+2. Check the list of available profiles.",The deleted profile should no longer be visible in the list.,,,
+TID004,Account Management,TCAM011,New valid email address,Verify the user can update their email address,User is logged into their account settings page,"1. Navigate to the ""Account Settings"" section.
+2. Locate the email address field.
+3. Enter a new valid email address.
+4. Click ""Save"" or ""Update.""",Email address is updated successfully and confirmation is sent to the new email.,,,
+TID004,Account Management,TCAM012,"Invalid email formats (e.g., no @, no domain)",Verify error handling for invalid email formats,User is logged into their account settings page,"1. Navigate to the ""Account Settings"" section.
+2. Enter an invalid email address.
+3. Click ""Save"" or ""Update.""","Error message displayed, no changes saved",,,
+TID004,Account Management,TCAM013,"New valid password (e.g., meets complexity req)",Verify the user can update their password,User is logged into their account settings page,"1. Navigate to the ""Account Settings"" section.
+2. Locate the password field.
+3. Enter the current password and the new password.
+4. Click ""Save"" or ""Update.""",Password is updated successfully. User can log in with the new password.,,,
+TID004,Account Management,TCAM014,"Weak passwords (e.g., 12345, password)",Verify error handling for weak passwords,User is logged into their account settings page,"1. Navigate to the ""Account Settings"" section.
+2. Enter a weak password.
+3. Click ""Save"" or ""Update.""","Error message displayed, no changes saved.",,,
+TID004,Account Management,TCAM015,New profile picture (valid image formats),Verify the user can update their profile picture,User is logged into their account settings page,"1. Navigate to the ""Account Settings"" section.
+2. Locate the profile picture field.
+3. Upload a new valid image file (e.g., .jpg, .png).
+4. Click ""Save"" or ""Update.""",Profile picture is updated successfully.,,,
+TID004,Account Management,TCAM016,"Invalid image file (e.g., .txt, corrupted file)",Verify error handling for invalid image uploads,User is logged into their account settings page,"1. Navigate to the ""Account Settings"" section.
+2. Attempt to upload an invalid image file.
+3. Click ""Save"" or ""Update.""","Error message displayed, no changes saved.",,,
+,,,,,,,,,,

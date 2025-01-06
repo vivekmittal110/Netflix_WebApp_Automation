@@ -1,0 +1,45 @@
+﻿Test Scenario TID,Test Scenario,Test Case Id,Test data,Test Case Title,Pre Condition,Steps to Execute,Expected Result,Actual Result,Status
+TID001,Login,TCL001,Valid Email Id and Valid Password,Verify Login With Valid Credentials,"1. Login page must be loaded 
+2. User Must be Registered","1. Open Browser
+2. Go to login page
+3. Enter Test data
+4. Enter Login button",User must be logged in and Redirected to the profile selection page,,
+TID001,Login,TCL002,Invalid Email Id and Invalid Password,Verify Login With Invalid Credentials,"1. Login page must be loaded 
+2. User Must be Registered","1. Open Browser
+2. Go to login page
+3. Enter Test data
+4. Enter Login button","Error message is displayed: ""Invalid username or password""",,
+TID001,Login,TCL003,Valid Email Id and Invalid Password,Verify Login With Valid Email Id and Invalid Password,"1. Login page must be loaded 
+2. User Must be Registered","1. Open Browser
+2. Go to login page
+3. Enter Test data
+4. Enter Login button","Error message is displayed: ""Invalid username or password""",,
+TID001,Login,TCL004,Invalid Email Id and Valid Password,Verify Login With Invalid Email Id and Valid Password,"1. Login page must be loaded 
+2. User Must be Registered","1. Open Browser
+2. Go to login page
+3. Enter Test data
+4. Enter Login button","Error message is displayed: ""Invalid username or password""",,
+TID001,Login,TCL005,N/A,Verify Login With Both Field Left Blank,"1. Login page must be loaded 
+2. User Must be Registered","1. Open Browser
+2. Go to login page
+3. Leave both field Blank","Error message is displayed: ""Invalid username or password""",,
+TID001,Login,TCL006,Valid Email Id and Valid Password but in different case,Verify case sensitivity of the Email and password fields,"1. Login page must be loaded 
+2. User Must be Registered","1. Open Browser
+2. Go to login page
+3. Enter Test data
+4. Enter Login button","Error message is displayed: ""Invalid username or password""",,
+TID001,Login,TCL007,Valid Email Id and Valid Password,Verify Login With Valid Credentials in different browser,"1. Login page must be loaded 
+2. User Must be Registered","1. Open Browser
+2. Go to login page
+3. Enter Test data
+4. Enter Login button",User must be logged in and Redirected to the profile selection page,,
+TID002,Login,TCL008,User account credentials,Verify successful logout redirects the user to the login page,1. User is logged in,"1. Navigate to the account/logout option.
+2. Click on the logout button",User is redirected to the login page.,,
+TID002,Login,TCL009,User account credentials,Verify that the session is terminated after logout,1. User is logged in,"1. Logout from the account.
+2. Attempt to navigate back using the browser's back button.","User remains on the login page, and no previous session data is accessible.",,
+TID002,Login,TCL010,User account credentials,Verify logout functionality when the internet connection is lost during the process,1. User is logged in,"1. Disconnect the internet connection.
+2. Attempt to log out.
+3. Reconnect the internet.",System displays an error message or logs out automatically after reconnection,,
+TID002,Login,TCL011,User account credentials,Verify logout functionality in different browsers (cross-browser testing),1. User is logged in,"1. Open Netflix in Chrome and Edge.
+2. Login to the account.
+3. Perform logout action.","Logout should function seamlessly on both browsers, redirecting to the login page.",,
