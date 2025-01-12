@@ -16,10 +16,10 @@ This project is an end-to-end automation testing framework for Netflix's web app
 
 ## **Technologies and Tools Used**  
 - **Programming Language:** Python
-- **Testing Frameworks:** Selenium WebDriver, Pytest
+- **Testing Frameworks:** Selenium WebDriver
 - **Project management and Bug tracking:** Jira
-- **Reporting:** Extent Reports, Allure  
-- **Version Control:** Git  
+- **Reporting:** Excel
+- **Version Control:** Git, GitHub 
 - **CI/CD:** GitHub Actions 
 
 ---
@@ -30,7 +30,7 @@ This project is an end-to-end automation testing framework for Netflix's web app
    - Error handling for invalid credentials.  
    - Logout functionality.  
 
-2. **Search and Navigation:**  
+2. **Search:**  
    - Validating search results for valid queries.  
    - Error handling for invalid or empty queries.  
 
